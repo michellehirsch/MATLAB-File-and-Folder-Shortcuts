@@ -1,0 +1,16 @@
+{
+"getfile":
+{
+    "inputs":
+    [
+		{"name":"filename", "kind":"required", "type":[["identifier=variable,function,localfunction,package,classdef"], ["filepath=*.m,*.mlx,*.mdl,*.slx"], ["char"]]}
+    ]
+},
+"goto":
+{
+    "inputs":
+    [
+		{"name":"filename", "kind":"required", "type":[["identifier=variable,function,localfunction,package,classdef"], ["filepath=*.m,*.mlx,*.mdl,*.slx"], ["char"]]}
+    ]
+}
+}

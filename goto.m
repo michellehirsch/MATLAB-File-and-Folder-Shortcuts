@@ -12,6 +12,12 @@ function goto(filename)
 % mhirsch@mathworks.com
 
 file = which(filename);
+
+if strcmp(file(1:10),'built-in (')
+    % Remove extra built-in part of string.
+    file = file(11:end-1);
+end
+
 if isempty(file)
     error(['File ''' filename ''' not found.']);
 end;
